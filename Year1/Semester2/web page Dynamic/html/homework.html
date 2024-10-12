@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="Number">
+    <input type="button" value="show" onclick="js()">
+    <p id="ouput"></p>
+    <script>
+        var day = new Array("1","2","3","4","5","6","7");
+        function js(){
+
+            var index = document.getElementById("Number").value;
+            if(index<7){
+                document.getElementById("ouput").innerHTML = day[index];
+            }
+            else{
+                document.getElementById("ouput").innerHTML = "Not nan";
+            }
+        }
+    </script>
+</body>
+</html>

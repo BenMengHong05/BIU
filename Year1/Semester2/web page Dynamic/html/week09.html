@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MengHong</title>
+</head>
+<body>
+    <img src="" name="Image" width="500px" height="300px">
+    <div class="content">
+        <h3>Enter a Number from 0-3</h3>
+        <input type="text" id="number"/>
+        <button onclick="js()">show</button>
+        
+    </div>
+    <script>
+    var myimg = new Array("/img/1.png", "/img/2.png","/img/3.png","/img/4.png");
+    function js(){
+        var Index = document.getElementById("number").value;
+       if(Index <= 3){
+        document.images["Image"].src = myimg[Index];
+       }else{
+        document.write("Not Image In array");
+       }
+    }
+    </script>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exmple:Form</title>
+</head>
+
+<body>
+    <!-- <h1>Example : Form</h1>
+    <form>
+        <label>First Name:</label>
+        <input type="text"><br>
+        <label>Last Name: </label>
+        <input type="text"> <br>
+        Type of shirt:
+        <select name="" id="">
+            <option value="">service</option>
+        </select> <br>
+        Size:
+        <input type="radio" name="H" id="">Large
+        <input type="radio" name="H" id="">Medum
+        <input type="radio" name="H" id="">Smaill <br>
+        Color:
+        <input type="checkbox" name="G" id="">Red
+        <input type="checkbox" name="G" id="">Blue
+        <input type="checkbox" name="G" id="">Black <br>
+        comment <br>
+        <textarea name="" id="" cols="40" rows="10"></textarea> <br>
+        <input type="button" value="But Now!">
+        <input type="button" value="Reset">
+    </form> -->
+    <h1>Example : Form</h1>
+    <table>
+        <tr>
+            <td>
+                <label for="">First Name</label>
+                <input type="text" value="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Last  Name</label>
+                <input type="text" name="" id="">
+            </td>
+        </tr>
+        <tr>
+            <td style="display: flex;">
+                type of shirt :
+                <select name="" id="">
+                    <option value="">
+                        select
+                    </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="display: flex;">
+                size:
+                <input type="radio" name="h" id="">Large
+                <input type="radio" name="h" id="">Medum
+                <input type="radio" name="h" id="">smll
+            </td>
+        </tr>
+        <tr>
+            <td style="display: flex;">
+                Color:
+                <input type="checkbox" name="h" id="">red
+                <input type="checkbox" name="h" id="">blue
+                <input type="checkbox" name="h" id="">black
+            </td>
+        </tr>
+        <tr style="display: flex;flex-direction: column;">
+            <td>
+                comment:
+            </td>
+            <td>
+                <textarea name="" id="" cols="20" rows="10">
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="inser.php">
+                    <input type="submit" value="Buy Now ?">
+                    <input type="button" value="Reset">
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

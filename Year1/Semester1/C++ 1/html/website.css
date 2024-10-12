@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.div1{
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.h1{
+    width: 30%;
+    margin-left: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+}
+.clonediv2{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.header2{
+    display: flex;
+    justify-content: space-between;
+}
+.div002{
+    margin: auto;  
+
+}
+.ul{
+    display: flex;
+    font-size: 25px;
+}
+.p{
+    font-size: 15px;
+}
+.hh1{
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.img{
+    margin: auto;
+    margin-top: 40px;
+
+}
+.a{
+    
+    text-decoration: none;
+    color: black;
+    
+}
+.hee{
+    width: 180px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    
+}
+.hee01{
+    margin-top: 12px;
+    cursor: pointer;
+}
+.header3{
+    height: 179px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    
+}
+.helloworld{
+    width: 70%;
+    height: 120px;
+    margin: auto;
+    justify-content: space-between; 
+
+    list-style-type: none;
+    display: flex;
+}
+.li01{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(13, 146, 155);
+    text-align: center;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+
+}
+.li02{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(13, 146, 155);
+    text-align: center;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+
+}
+.li03{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(13, 146, 155);
+    text-align: center;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+
+}
+.li04{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(13, 146, 155);
+    text-align: center;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+.h001{
+    margin-left: 30px;
+    color: white;
+}
+.h002{
+    margin-left: 40px;
+    color: white;
+}
+.h003{
+    margin-left: 25px;
+    color: white;
+}
+.h004{
+    margin-left: 40px;
+    color: white;
+}
+
+
+    
+
+
+
