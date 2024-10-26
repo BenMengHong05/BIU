@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="display: flex;flex-direction: column;max-width: 20vh;">
+            Number1
+            <input type="text" id="Number1">
+            Number2
+            <input type="text" id="Number2">
+            <button onclick="js()">+</button>
+            <button onclick="js1()">_</button>
+            <button onclick="js2()">*</button>
+            <button onclick="js3()">/</button>
+        <p>Result: <span id="show"></span></p>
+    </div>   
+    <script>
+        function js(){            
+            let N1 =parseFloat( document.getElementById("Number1").value);
+            let N2 = parseFloat(document.getElementById("Number2").value);
+            document.getElementById("show").innerHTML =  N1 + N2;
+        }
+        function js1(){            
+            let N1 =parseFloat( document.getElementById("Number1").value);
+            let N2 = parseFloat(document.getElementById("Number2").value);
+            document.getElementById("show").innerHTML =  N1 - N2;
+        }
+        function js2(){            
+            let N1 =parseFloat( document.getElementById("Number1").value);
+            let N2 = parseFloat(document.getElementById("Number2").value);
+            
+            document.getElementById("show").innerHTML =  N1 * N2;
+        }
+        function js3(){            
+            let N1 =parseFloat( document.getElementById("Number1").value);
+            let N2 = parseFloat(document.getElementById("Number2").value);
+            
+            document.getElementById("show").innerHTML =  N1 / N2;
+        }
+    </script>
+</body>
+
+</html>

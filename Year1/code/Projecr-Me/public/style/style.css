@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.txt-logo {
+    font-size: 2.3rem;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.txt-logo h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-menu ul li a {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    gap: 5vh;
+}
+
+.nav-menu ul li .nav-a::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(42, 34, 189);
+    height: 4px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.nav-menu ul li .nav-a:hover::after {
+    width: 100%;
+}
+
+.content-h2 {
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.h2-im{
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.content-p {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: black;
+}
+
+.b-learn {
+    width: 17vh;
+    font-size: 1.3rem;
+    border-radius: 10rem;
+    transition: .5s;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: none;
+}
+
+.b-learn:hover {
+    border: none;
+    background-color: rgb(148, 109, 186);
+
+}
+
+.b-contact {
+    width: 17vh;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+
+.fa-xmark {
+    font-size: 2rem;
+    color: black;
+}
+
+.fa-bars {
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.slider ul li a {
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.slider-menu ul li {
+    width: 100%;
+}
+
+.nav-menu div div .slider-menu li {
+    width: 100%;
+    min-height: 10vh;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-menu div div .slider-menu li a {
+    color: rgb(11, 55, 98);
+}
+
+.nav-menu div div .slider-menu li:hover {
+    background-color: rgb(176, 162, 192);
+}
+h4{
+    cursor: pointer;
+}
+
+.wrapper{
+    margin-top: 10vh;
+    height: 15vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item{
+    min-width: 20vh;
+    min-height: 20vh;
+    border-radius: 6px;
+    left: 100%;
+    position: absolute;
+    animation-name: scroolleft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes scroolleft {
+    to{
+        left: -500px;
+    }
+}
+.item1{
+    animation-delay: calc(30s / 3 * (3 - 1) * -1);
+}
+.item2{
+    animation-delay: calc(30s / 3 * (3 - 2) * -1);
+}
+.item3{
+    animation-delay: calc(30s / 3 * (3 - 3) * -1);
+}
+
+/*----------------------------------------------------- section 2 ---------------------------------------------------------*/
+.content-h2::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    border-left: 3px solid red;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+    animation: left-to-right 4s steps(100) infinite;
+}
+@keyframes left-to-right {
+    100%{
+        left: 100%;
+    }
+}
+.content-h2{
+    position: relative;
+}
+.nav-aboutme div div h1 a{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.dd-mm-yy div div{
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: black;
+    min-height: 3vh;
+}
+.about-me p{
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+.txt-content ul li a{
+    color: black;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.img-web{
+    min-width: 100%;
+    animation: up 3.5s ease-in-out infinite alternate-reverse both;
+}
+@keyframes up {
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(-30px);
+    }
+}
+
+@media screen and (max-width:5000px) {
+    .content-icon a i {
+        display: none;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .li5 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .nav-menu {
+        margin: 10vh;
+    }
+
+    .li4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .li {
+        display: none;
+    }
+    .content-icon a i {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 1.7rem;
+    }
+
+    .content-icon a {
+        text-decoration: none;
+    }
+}
+/*--------------------------------------------------------- contact --------------------------------------------------*/
+.address{
+    min-height: 18vh;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.call-us{
+    min-height: 18vh;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.email-us{
+    min-height: 18vh;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.map{
+    min-height: 35vh;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.information-me{
+    min-height: 35vh;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.icon-footer{
+    font-size: 2rem;
+}
+.submint-info button{
+    background-color: rgba(159, 164, 162, 0.365);
+    padding: 5px 40px 5px 40px;
+    border: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: .5s ease-in-out ;
+}
+.submint-info button:hover{
+    color: white;
+    background-color: rgb(89, 89, 89);
+}
+.service-son-content{
+    margin: 1vh;
+    min-height: 30vh;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    cursor: pointer;
+}
+.service-icon{
+    font-size: 2.2rem;
+    padding: 1vh;
+    color: white;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.734);
+    cursor: pointer;
+}
+.service-son-content:hover{
+    margin: 1px;
+    transition: 1.5s all;
+}
+.service-son-content i:hover{
+    transition: 1.5s all;
+    cursor: pointer;
+    color: rgb(60, 76, 171);
+}
+
+
+.content-about-team:hover{
+    margin: -0.7vh;
+    transition: all .6s linear ;
+    cursor: pointer;
+    border: 1px solid red;
+}
+.team-content-ul li a i{
+    font-size: 1.3rem;
+    color: rgb(15, 63, 174);
+}
+.team-content-ul li a i:hover{
+    transition: all .7 linear;
+    color: rgb(4, 201, 255)
+}
+.owner-name{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+
+
+/*----------------------------------------------------------- contetn footer ------------------------------------------------*/
+.footer-content-ul li a{
+    color: rgb(179, 179, 179);
+    text-decoration: none;
+
+}
+.footer-content-ul li a:hover{
+    color: rgb(124, 101, 146);
+}
+.footer-content-ul li{
+    color: rgb(179, 179, 179);
+
+}
+.footer-content{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(220, 239, 255);
+}
+.content-more-footer p{
+    color: rgb(220, 239, 255);
+}
+.content-more-footer h6{
+    color: rgb(220, 239, 255);
+}
+.footer-icon-ul li a{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 5px 10px 5px 10px;
+}
+.footer-icon-ul li a i{
+   text-align: center;
+}

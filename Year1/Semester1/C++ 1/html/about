@@ -1,0 +1,46 @@
+<div class="about header-div2">
+            <div class="header-div-text">
+                <h1 class="header2-div2-text">
+                    About Us
+                </h1>
+                <p class="header2-paragrab">
+                    Dolor iure expedita id fuga asperiores qui sunt consequatur minima. <br>
+                    Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. <br>
+                    Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.
+                </p>
+                <div class="header2-phone">
+                    <div class="header2-text-div1">
+                        <i style="font-size: 50px; padding: 0px 30px;" class="fa-sharp fa-thin fa-mobile-button"></i>
+                        <div class="header2-div1">
+                            <h5>
+                                Ullamco laboris nisi ut aliquip consequat
+                            </h5>
+                            <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                        </div>
+                    </div>
+                    <div class="header2-text-div2">
+                        <i style="font-size: 50px; padding: 0px 30px;" class="fa-sharp fa-thin fa-mobile-button"></i>
+                        <div class="header2-div2">
+                            <h5>
+                                Magnam soluta odio exercitationem reprehenderi
+                            </h5>
+                            <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header2-text-div3">
+                        <i style="font-size: 50px; padding: 0px 30px;" class="fa-sharp fa-thin fa-mobile-button"></i>
+                        <div class="header2-div3">
+                            <h5>
+                                Voluptatem et qui exercitationem
+                            </h5>
+                            <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-div-img">
+                <img class="img" src="/img/47a2abe6971777da197f9907e50baa6d__1_-removebg-preview (1).png" alt="menghong">
+            </div>
+        </div>
