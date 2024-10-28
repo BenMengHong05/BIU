@@ -6,38 +6,45 @@ include('header.php');
 
 <!-- Categories Section Begin -->
  <?php
- include('begin.php');
+ include('hero.php');
  ?>
-
 <!-- Categories Section End -->
 
 <!-- Product Section Begin -->
-
+<?php
+include('product.php');
+?>
 <!-- Product Section End -->
 
 <!-- Banner Section Begin -->
-
+<?php
+include('banner.php');
+?>
 <!-- Banner Section End -->
 
 <!-- Trend Section Begin -->
-
+ <?php
+ include('trend.php');
+ ?>
 <!-- Trend Section End -->
 
 <!-- Discount Section Begin -->
-
+ <?php
+ include('discount.php');
+ ?>
 <!-- Discount Section End -->
 
 <!-- Services Section Begin -->
-
+ <?php 
+ include('services.php');
+ ?>
 <!-- Services Section End -->
 
 <!-- Instagram Begin -->
-
+ <?php
+ include('instagram.php');
+ ?>
 <!-- Instagram End -->
-
-<!-- Footer Section Begin -->
-
-<!-- Footer Section End -->
 
 <!-- Search Begin -->
 <div class="search-model">
@@ -48,9 +55,11 @@ include('header.php');
         </form>
     </div>
 </div>
+<!-- Search End -->
+
+ <!-- Footer Section Begin -->
 <?php
 include("footer.php");
-
 ?>
-<!-- Search End -->
+<!-- Footer Section End -->
 

@@ -1,17 +1,34 @@
+<?php
+
+include('../Back-end/forms/contentdbs.php');
+
+$db = "SELECT * FROM discounds";
+$dbs = $pdo->query($db);
+$dbms = $dbs->fetchAll(PDO::FETCH_ASSOC);
+?>
 <section class="discount">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 p-0">
                 <div class="discount__pic">
-                    <img src="img/discount.jpg" alt="">
+                    <?php
+                    foreach ($dbms as $discound) {
+                        echo "<img src=\"../back-end/image/" . htmlspecialchars($discound['image']) .  "\">";
+                    }
+                    ?>
                 </div>
             </div>
             <div class="col-lg-6 p-0">
                 <div class="discount__text">
                     <div class="discount__text__title">
                         <span>Discount</span>
-                        <h2>Summer 2019</h2>
-                        <h5><span>Sale</span> 50%</h5>
+                        <?php
+                        foreach ($dbms as $discound) {
+                            echo " <h2>" . htmlspecialchars($discound['title'])  . "</h2>";
+                            echo "  <h5><span>Sale</span>" . htmlspecialchars($discound['description']) . "</h5>";
+                        }
+                        ?>
+                       
                     </div>
                     <div class="discount__countdown" id="countdown-time">
                         <div class="countdown__item">
